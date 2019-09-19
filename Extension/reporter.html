@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AirbnBug Reporter</title>
+
+    <style>
+        body {
+            width: 700px;
+            margin: 10px;
+            padding: 0px;
+        }
+
+        #screenshot { 
+            width: 700px;
+            background-image: url('loader.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50px 56px;
+            background-color: #FF5A5F;
+        }
+
+        .loader_text {
+            margin-top: 180px;
+            padding-left: 175px;
+            width: 100%;
+            position: absolute;
+            font-weight: bold;
+            font-size: 9pt;
+            color: #FFFFFF;
+        }
+
+        #screenshot_image {
+            max-width: 700px;
+            height:auto;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>AirbnBug Reporter</h1>
+
+    <!-- show progress taking screenshot and gathering data -->
+    <!-- open bug reporter in iframe? -->
+    <!-- fill in info -->
+    <!-- allow annotating? -->
+
+    <!-- resize to tab ratio -->
+    <!-- show loader here -->
+    <div>
+        <div>
+            <h2>Screenshot</h2>
+            <div id="screenshot">
+                <img id="screenshot_image"></img>
+            </div>
+        </div>
+
+        <div>
+            <h2>Session Info</h2>
+            <pre id="session_info"></pre>
+        </div>
+    </div>
+
+    <div>Built by <a href="https://one.airbnb.com/people/nick_reynolds" target="_blank">Nick Reynolds</a></div>
+    
+
+    <script src="reporter.js"></script>
+</body>
+
+</html>

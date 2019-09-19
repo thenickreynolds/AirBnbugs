@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "AirbnBugs",
+    "version": "0.1",
+    "description": "Bug reporter for Airbnb. Request features from @reynolds.",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_title": "Airbnb Bug Reporter",
+        "default_popup": "reporter.html"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab",
+        "http://*.airbnb.com/*"
+    ],
+    "web_accessible_resources": ["icon.png"]
+}
